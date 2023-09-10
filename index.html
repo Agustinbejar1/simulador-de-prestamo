@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es.AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <title>Simulador de prestamo</title>
+</head>
+<body>
+    <main class="min-vh-100">
+     <div class="simulador container d-flex text-center justify-content-center">
+        <div class="row mt-3 justify-content-center">
+            <div class="col-8">
+                <h1 class="text-center">Calcular amortización</h1>
+                <div>
+                    <label for="monto" class="fw-bold">Monto</label>
+                    <input type="text" class="form-control" id="monto">
+                </div>
+                <div>
+                    <label for="cuotas" class="fw-bold">Cuotas</label>
+                    <input type="text" class="form-control" id="cuotas">
+                </div>
+                <div>
+                    <label for="interes" class="fw-bold">Interés Mensual</label>
+                    <input type="text" class="form-control" id="interes">
+                </div>
+                <button type="submit" class="bg-dark text-light mt-2" id="btnCalcular">Calcular</button>
+            </div>
+            <div class="col-8 mt-3">
+                <table id="lista-tabla" class="table fw-bold fs-5 col-8">
+                    <thead>
+                        <tr class="fw-bold">
+                            <th>Cuota</th>
+                            <th>Capital</th>
+                            <th>Interés</th>
+                            <th>Saldo</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+     </div>
+    </main>
+<script src="js/main.js"></script>
+</body>
+</html>
